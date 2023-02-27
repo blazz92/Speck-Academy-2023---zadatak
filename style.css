@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, a, input, button {
+    font-size: 14px;
+}
+
+#container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#container h1 {
+    margin-bottom: 40px;
+}
+
+.controls input[type="text"] {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    margin-right: 25px;
+    min-width: 300px;
+}
+
+.controls input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #d94d53;
+}
+
+.controls button {
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid #d94d53;
+    background: #ffece7;
+    color: #d02732;
+    font-weight: 600;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    border: 1px solid #d02732;
+    background: #d02732;
+    color: #fff;
+}
+
+.controls a {
+    float: right;
+    padding: 10px 0;
+    color: #d3343c;
+}
+
+#insertedTechnologies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0;
+    list-style: none;
+    margin-top: 50px;
+}
+
+#insertedTechnologies>li {
+    text-align: center;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+}
+
+@media screen and (max-width: 767px) {
+    .controls input[type="text"], .controls button, .controls a {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    #insertedTechnologies {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
